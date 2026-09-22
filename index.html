@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saz Works — AI systems that ship software</title>
+  <meta name="description" content="Saz Works is the AI engineering studio of Andrés Rubio del Saz. Production GenAI: agentic workflows, RAG pipelines and LLM platforms on Azure and Kubernetes. Remote, from Spain.">
+  <meta name="author" content="Andrés Rubio del Saz">
+  <meta name="theme-color" content="#0c0b09">
+  <link rel="canonical" href="https://andresrubio.github.io/sazworks/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andresrubio.github.io/sazworks/">
+  <meta property="og:title" content="Saz Works — AI systems that ship software">
+  <meta property="og:description" content="Production GenAI engineering: agentic workflows, RAG pipelines and LLM platforms that make it past the demo.">
+  <meta property="og:site_name" content="Saz Works">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230c0b09'/><text x='50' y='72' text-anchor='middle' font-size='64' font-weight='700' font-family='system-ui' fill='%23f2b233'>S</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Saz Works",
+    "alternateName": "Saz Works AI Engineering Studio",
+    "url": "https://andresrubio.github.io/sazworks/",
+    "description": "AI engineering studio building production GenAI: agentic workflows, RAG pipelines and LLM platforms on Azure and Kubernetes.",
+    "email": "andres.rubio.saz@gmail.com",
+    "areaServed": "Worldwide",
+    "address": { "@type": "PostalAddress", "addressCountry": "ES" },
+    "founder": {
+      "@type": "Person",
+      "name": "Andrés Rubio del Saz",
+      "jobTitle": "AI Engineer & Software Architect",
+      "sameAs": [
+        "https://www.linkedin.com/in/andresrubiodelsaz",
+        "https://github.com/AndresRubio",
+        "https://andresrubio.github.io/portfolio",
+        "https://andresrubio.github.io/aboutme/"
+      ]
+    },
+    "knowsAbout": [
+      "Agentic workflows", "Multi-agent systems", "Retrieval-Augmented Generation",
+      "LLM evaluation", "Prompt engineering", "LlamaIndex", "LangChain", "Pydantic AI",
+      "Python", "Java", "Kubernetes", "Azure", "AWS", "Kafka"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="wordmark" aria-label="Saz Works home">
+        <span class="wordmark-mark" aria-hidden="true">S</span>
+        <span class="wordmark-text">Saz<span class="accent">Works</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#engagements">Engagements</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20discovery%20call" class="btn btn-primary btn-sm cta">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container">
+        <p class="eyebrow">AI engineering studio · Spain · Remote worldwide</p>
+        <h1>AI systems that <span class="accent">ship</span> software.</h1>
+        <p class="hero-lead">
+          Most GenAI projects stall between the demo and production. Saz Works builds the part
+          after the demo: agentic workflows, RAG pipelines and LLM platforms that run on Azure
+          and Kubernetes, with tests, CI/CD and someone accountable for them.
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20discovery%20call" class="btn btn-primary cta">Book a 30-min call</a>
+          <a href="#services" class="btn btn-ghost">See services</a>
+        </div>
+        <div class="trust">
+          <p class="trust-label">Previously built for</p>
+          <ul class="trust-list" role="list">
+            <li>Teneo · Artificial Solutions</li>
+            <li>Narrativa</li>
+            <li>Zooplus</li>
+            <li>PirateLink</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section reveal">
+      <div class="container">
+        <p class="section-kicker">01 · Services</p>
+        <h2>What I build</h2>
+        <p class="section-intro">
+          Four things, done end to end: architecture, code, deployment and handover.
+          Python and Java. Azure, AWS and Kubernetes. Your stack, not mine.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Agentic systems &amp; AI-driven SDLC</h3>
+            <p>
+              Multi-agent workflows that plan, generate, review and ship code or documents.
+              Tool use, orchestration, guardrails and evaluation so the agents earn trust
+              instead of demanding it.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Pydantic AI</li><li class="tag">LangChain</li><li class="tag">Claude &amp; OpenAI APIs</li><li class="tag">MCP</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>RAG &amp; LLM integration</h3>
+            <p>
+              Retrieval pipelines over your own data, prompt engineering, private and hosted
+              LLM evaluation, and synthetic test data so quality is measured, not felt.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">LlamaIndex</li><li class="tag">Vector search</li><li class="tag">LLM evals</li><li class="tag">Synthetic data</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>GenAI platform engineering</h3>
+            <p>
+              The services around the model: Python and Java microservices, Kafka streams,
+              Kubernetes deployments on Azure or AWS, CI/CD and observability. Ten years of
+              backend work applied to LLM products.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Python</li><li class="tag">Java 21</li><li class="tag">Kubernetes</li><li class="tag">Azure</li><li class="tag">Kafka</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>AI architecture audit</h3>
+            <p>
+              Two weeks inside your current GenAI stack. You get a written review of what
+              blocks production, a prioritised roadmap and a cost and risk estimate for each
+              step. Useful before you hire, buy or rebuild.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Architecture review</li><li class="tag">Roadmap</li><li class="tag">Cost &amp; risk</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="engagements" class="section reveal">
+      <div class="container">
+        <p class="section-kicker">02 · Engagements</p>
+        <h2>How we can work together</h2>
+        <p class="section-intro">
+          Three formats, each with a fixed scope and a weekly demo. Quotes on request after a
+          first call.
+        </p>
+        <div class="card-grid card-grid-3">
+          <article class="card card-plan">
+            <p class="plan-length">1–2 weeks</p>
+            <h3>Discovery audit</h3>
+            <p>
+              Assessment of an existing GenAI project or an idea you want to validate.
+              Ends with a written report and a roadmap you can execute with or without me.
+            </p>
+            <ul class="check-list" role="list">
+              <li>Architecture and code review</li>
+              <li>Production readiness gaps</li>
+              <li>Prioritised roadmap and estimates</li>
+            </ul>
+            <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20discovery%20audit" class="btn btn-ghost btn-block cta">Get a quote</a>
+          </article>
+          <article class="card card-plan card-plan-featured">
+            <p class="plan-length">4–8 weeks</p>
+            <h3>Build sprint</h3>
+            <p>
+              A scoped feature or system, shipped to your environment: an agent workflow, a RAG
+              service, an evaluation harness. Weekly demos, tests, docs and a handover session.
+            </p>
+            <ul class="check-list" role="list">
+              <li>Fixed scope, fixed price</li>
+              <li>Deployed to your cloud</li>
+              <li>Tests, CI/CD and documentation included</li>
+            </ul>
+            <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20build%20sprint" class="btn btn-primary btn-block cta">Get a quote</a>
+          </article>
+          <article class="card card-plan">
+            <p class="plan-length">Monthly</p>
+            <h3>Fractional AI engineer</h3>
+            <p>
+              Two or three days a week embedded in your team. Architecture decisions, code,
+              reviews and mentoring for engineers moving into GenAI.
+            </p>
+            <ul class="check-list" role="list">
+              <li>2–3 days per week</li>
+              <li>Cancel with one month's notice</li>
+              <li>Your tools, your repos, your rituals</li>
+            </ul>
+            <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20fractional%20AI%20engineer" class="btn btn-ghost btn-block cta">Get a quote</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section reveal">
+      <div class="container">
+        <p class="section-kicker">03 · Process</p>
+        <h2>From first call to handover</h2>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>Call</h3>
+            <p>Thirty minutes on what you are trying to ship and what is in the way. No slides.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>Scope</h3>
+            <p>A one-page proposal: deliverables, timeline, price, what is explicitly out.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>Build</h3>
+            <p>Work in your repos with a demo every week. You see progress, not a status report.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <h3>Handover</h3>
+            <p>Tests, docs, runbooks and a session with your team so it survives without me.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <div class="container">
+        <p class="section-kicker">04 · Selected work</p>
+        <h2>Shipped before</h2>
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-head">
+              <h3>Conversational AI SaaS platform</h3>
+              <p class="work-meta">Teneo · Artificial Solutions · 2023–2026</p>
+            </div>
+            <p>
+              Led GenAI R&amp;D on a low-code conversational platform: RAG patterns, private LLM
+              evaluation, synthetic test data and Python analytics modules with LlamaIndex and
+              LangChain, deployed on Azure and Kubernetes.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">RAG</li><li class="tag">LLM evaluation</li><li class="tag">Azure</li><li class="tag">Kubernetes</li><li class="tag">Java</li><li class="tag">Kafka</li>
+            </ul>
+          </article>
+          <article class="work-item">
+            <div class="work-head">
+              <h3>PirateLink agentic game engine</h3>
+              <p class="work-meta">Personal R&amp;D · 2023–present</p>
+            </div>
+            <p>
+              An agentic event engine for video games built from scratch: LLaMA-based agents
+              reason over game events, real-time voice via Groq TTS/ASR, async orchestration and
+              an AI-assisted coding workflow throughout.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Pydantic AI</li><li class="tag">LLaMA</li><li class="tag">Groq</li><li class="tag">TTS/ASR</li><li class="tag">Async</li>
+            </ul>
+          </article>
+          <article class="work-item">
+            <div class="work-head">
+              <h3>NLP-as-a-service platform</h3>
+              <p class="work-meta">Narrativa · 2022–2023</p>
+            </div>
+            <p>
+              Designed and built the SaaS layer serving Narrativa's NLP models: Java 17 and
+              Micronaut microservices, PostgreSQL, Kubernetes with Argo and GitLab CI/CD.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Java 17</li><li class="tag">Micronaut</li><li class="tag">Argo</li><li class="tag">GitLab CI/CD</li>
+            </ul>
+          </article>
+          <article class="work-item">
+            <div class="work-head">
+              <h3>E-commerce platform and ML pipelines</h3>
+              <p class="work-meta">Zooplus · 2016–2022</p>
+            </div>
+            <p>
+              Six years on the monolith-to-microservices migration of one of Europe's largest
+              e-commerce platforms, plus PySpark machine learning pipelines on AWS and Mesos.
+            </p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Microservices</li><li class="tag">PySpark</li><li class="tag">AWS</li><li class="tag">Spring</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">05 · About</p>
+          <h2>Behind Saz Works</h2>
+        </div>
+        <div class="about-body">
+          <p>
+            Saz Works is the studio of <strong>Andrés Rubio del Saz</strong>, AI engineer and
+            software architect based in Spain. Ten-plus years of Java and Python backend
+            engineering, the last three focused on GenAI: RAG, agentic workflows and LLM
+            evaluation in production.
+          </p>
+          <p>
+            I work as a single senior engineer, not an agency. You talk to the person who writes
+            the code. I say no to work I cannot deliver well, and I push back on technical
+            decisions when the evidence says so.
+          </p>
+          <div class="about-links">
+            <a href="https://andresrubio.github.io/portfolio" class="text-link" target="_blank" rel="noopener">Portfolio</a>
+            <a href="https://andresrubio.github.io/aboutme/" class="text-link" target="_blank" rel="noopener">CV</a>
+            <a href="https://www.linkedin.com/in/andresrubiodelsaz" class="text-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/AndresRubio" class="text-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section reveal">
+      <div class="container">
+        <p class="section-kicker">06 · FAQ</p>
+        <h2>Questions clients ask</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Do you work remotely and across time zones?</summary>
+            <p>Yes. I am in Spain (CET) and have worked remotely with teams across Europe since 2022. Overlap of four hours a day is enough.</p>
+          </details>
+          <details>
+            <summary>Which models and clouds do you use?</summary>
+            <p>Whatever fits your constraints: Claude, OpenAI, Gemini or open models such as LLaMA on Groq or your own GPUs. Azure and AWS in production, Kubernetes for both.</p>
+          </details>
+          <details>
+            <summary>Will you sign an NDA or work in our repositories?</summary>
+            <p>Yes to both. I work inside your GitHub or GitLab, follow your review process and leave everything documented.</p>
+          </details>
+          <details>
+            <summary>What is the fastest way to start?</summary>
+            <p>Book a thirty-minute call. If there is a fit, you get a one-page proposal within three working days and we can usually start within two weeks.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal contact">
+      <div class="container">
+        <p class="section-kicker">07 · Contact</p>
+        <h2>Have a GenAI project stuck before production?</h2>
+        <p class="section-intro">Tell me what you are trying to ship. I reply within one working day.</p>
+        <div class="hero-actions">
+          <a href="mailto:andres.rubio.saz@gmail.com?subject=Saz%20Works%20%E2%80%94%20discovery%20call" class="btn btn-primary cta">Book a 30-min call</a>
+          <a href="mailto:andres.rubio.saz@gmail.com" class="btn btn-ghost">andres.rubio.saz@gmail.com</a>
+          <a href="https://www.linkedin.com/in/andresrubiodelsaz" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Saz Works · Andrés Rubio del Saz · Spain</p>
+      <p><a href="https://github.com/AndresRubio/sazworks" target="_blank" rel="noopener">Source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
