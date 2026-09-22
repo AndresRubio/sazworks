@@ -14,6 +14,10 @@ Plain HTML/CSS/JS. No build step, no dependencies. Open `index.html` in a browse
 | `es/index.html` | Spanish version, same structure. Keep both in sync when editing copy. |
 | `styles.css` | Single stylesheet, dark theme, responsive, print-safe. |
 | `script.js` | Progressive enhancement only: scroll reveal, active nav, mobile menu. |
+| `es/index.html` … `es/legal/` | Spanish pages. |
+| `legal/index.html` | Legal notice and privacy (LSSI + GDPR). **Fill in your NIF and address** before going live. |
+| `assets/` | Logo SVGs (`logo.svg`, `logo-light-bg.svg`, `logo-mark.svg`, `logo-mono.svg`), Open Graph image (`og.svg` source, `og.png` export), app icons. |
+| `favicon.svg`, `favicon.ico` | Tab icons. |
 | `.github/workflows/deploy.yml` | Publishes to GitHub Pages on every push to `main`. |
 | `.nojekyll` | Stops GitHub running Jekyll over the files. |
 
@@ -31,6 +35,21 @@ Plain HTML/CSS/JS. No build step, no dependencies. Open `index.html` in a browse
    and a `CNAME` record `www → andresrubio.github.io`.
 3. In **Settings → Pages**, set the custom domain and enable *Enforce HTTPS*.
 4. Update the `canonical`, `og:url` and JSON-LD `url` values in `index.html`.
+
+## Brand assets
+
+Everything starts from `assets/og.svg` and `assets/logo*.svg`. If you change the accent
+colour, edit the hex values in those SVGs and re-export the PNGs:
+
+```bash
+qlmanage -t -s 1200 -o /tmp/og assets/og.svg && cp /tmp/og/og.svg.png assets/og.png
+qlmanage -t -s 180 -o /tmp/ic favicon.svg && cp /tmp/ic/favicon.svg.png assets/apple-touch-icon.png
+```
+
+## Testimonials
+
+Both `index.html` and `es/index.html` contain a commented-out `#testimonials` section
+before the FAQ. Uncomment it once you have real quotes. Never publish invented ones.
 
 ## Booking link
 

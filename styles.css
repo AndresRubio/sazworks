@@ -510,6 +510,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .faq-list details[open] summary::after { content: "−"; }
 .faq-list details p { margin: var(--space-2) 0 0; max-width: 62ch; }
 
+/* Testimonials */
+
+.quote { margin: 0; }
+.quote blockquote { margin: 0 0 var(--space-2); }
+.quote blockquote p { font-size: 1.02rem; color: var(--text); }
+.quote figcaption { display: flex; flex-direction: column; font-size: 0.88rem; color: var(--text-dim); margin-top: auto; }
+.quote figcaption strong { color: var(--text); }
+
+/* Legal pages */
+
+.legal .section { border-top: none; padding-top: var(--space-4); }
+.prose { max-width: 72ch; }
+.prose h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
+.prose h2 { font-size: 1.25rem; margin-top: var(--space-4); }
+.legal-updated { font-family: var(--font-mono); font-size: 0.8rem; }
+.plain-list { list-style: none; padding: 0; margin: 0 0 var(--space-2); color: var(--text-dim); }
+.plain-list li { padding: 0.25rem 0; }
+.fill-in { color: var(--accent); font-family: var(--font-mono); font-size: 0.9em; }
+
 /* Contact */
 
 .contact { background: var(--bg-alt); }

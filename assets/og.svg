@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#f2b233" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="fade" cx="25%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m"><rect width="1200" height="630" fill="url(#fade)"/></mask>
+  </defs>
+  <rect width="1200" height="630" fill="#0c0b09"/>
+  <rect width="1200" height="630" fill="url(#grid)" mask="url(#m)"/>
+  <g transform="translate(80 72) scale(0.72)">
+    <rect width="100" height="100" rx="20" fill="#f2b233"/>
+    <path d="M63.5 34.5c-3.2-3.4-8-5.3-13.6-5.3-8.8 0-15.1 4.6-15.1 11.4 0 6.2 4.5 9.3 13.4 11.3l4.3 1c5.3 1.2 7.4 2.6 7.4 5.4 0 3.3-3.3 5.4-8.4 5.4-5.4 0-9.4-2.3-12.4-6.2l-7.1 5.6c4 5.6 10.8 8.9 19.2 8.9 10.2 0 17.4-5 17.4-13 0-6.5-4.6-10.1-13.3-12l-4.4-1c-5.2-1.2-7.4-2.6-7.4-5.2 0-2.9 3-4.8 7.3-4.8 4.2 0 7.3 1.6 9.6 4.5z" fill="#1a1305"/>
+  </g>
+  <text x="170" y="122" font-family="'Space Grotesk','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="40" letter-spacing="-1" fill="#f1ede4">Saz<tspan fill="#f2b233">Works</tspan></text>
+  <text x="80" y="300" font-family="'Space Grotesk','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="92" letter-spacing="-3" fill="#f1ede4">AI systems that</text>
+  <text x="80" y="400" font-family="'Space Grotesk','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="92" letter-spacing="-3" fill="#f1ede4"><tspan fill="#f2b233">ship</tspan> software.</text>
+  <text x="80" y="480" font-family="Inter,'Helvetica Neue',Arial,sans-serif" font-size="30" fill="#a49e91">Agentic workflows · RAG · LLM platforms on Azure and Kubernetes</text>
+  <text x="80" y="566" font-family="'JetBrains Mono',Menlo,monospace" font-size="24" fill="#f2b233">sazworks.ai</text>
+</svg>
