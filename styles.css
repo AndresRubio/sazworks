@@ -190,6 +190,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .site-nav .btn { margin-top: var(--space-2); text-align: center; }
 }
 
+/* Language switch */
+
+.site-nav .lang-switch {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.55rem;
+}
+.site-nav .lang-switch:hover { border-color: var(--accent); }
+
+@media (max-width: 760px) {
+  .site-nav .lang-switch { align-self: flex-start; margin-top: var(--space-2); border-bottom: 1px solid var(--border); }
+}
+
 /* Buttons */
 
 .btn {

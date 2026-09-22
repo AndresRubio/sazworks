@@ -10,7 +10,8 @@ Plain HTML/CSS/JS. No build step, no dependencies. Open `index.html` in a browse
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | The whole page. Content lives in the markup. |
+| `index.html` | The whole page in English. Content lives in the markup. |
+| `es/index.html` | Spanish version, same structure. Keep both in sync when editing copy. |
 | `styles.css` | Single stylesheet, dark theme, responsive, print-safe. |
 | `script.js` | Progressive enhancement only: scroll reveal, active nav, mobile menu. |
 | `.github/workflows/deploy.yml` | Publishes to GitHub Pages on every push to `main`. |
