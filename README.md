@@ -2,8 +2,8 @@
 
 Company page for **Saz Works**, the freelance AI engineering studio of Andrés Rubio del Saz.
 
+Live at: https://andresrubio.github.io/sazworks
 Final home: https://sazworks.com (all canonical and Open Graph URLs already point there).
-Published from GitLab Pages while the domain is pending; also deployable on GitHub Pages.
 
 Plain HTML/CSS/JS. No build step, no dependencies. Open `index.html` in a browser to preview.
 
@@ -24,23 +24,17 @@ Plain HTML/CSS/JS. No build step, no dependencies. Open `index.html` in a browse
 
 ## Deploy
 
-Two remotes, two pipelines, same files:
-
-- **GitLab** (`gitlab` remote, project `andres.rubio1/sazworks`): `.gitlab-ci.yml` publishes to GitLab Pages on
-  every push to `main`. Works on a private project. Make the site public once under
-  **Settings → General → Visibility → Pages: Everyone**. The URL is under **Deploy → Pages**.
-- **GitHub** (`origin` remote, `AndresRubio/sazworks`): `.github/workflows/deploy.yml` publishes to GitHub Pages.
-  Only works if the repo is public (or on a paid plan).
+`.github/workflows/deploy.yml` publishes to GitHub Pages on every push to `main`. The repo
+must be public (or on a paid plan), and Pages must be set once to **Source: GitHub Actions**
+under Settings → Pages.
 
 ## Custom domain (sazworks.com)
 
-GitLab: **Deploy → Pages → New domain**, enter `sazworks.com`, then at the registrar add the
-`A`/`ALIAS` record and the `_gitlab-pages-verification-code` TXT record GitLab shows. Add
-`www` the same way. GitLab issues the HTTPS certificate automatically.
-
-GitHub (if used instead): add a `CNAME` file containing `sazworks.com`, point the apex `A`
-records to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153, and
-`www` as a `CNAME` to `andresrubio.github.io`.
+1. Add a file named `CNAME` at the repo root containing `sazworks.com`, commit and push.
+2. At the registrar, add `A` records for the apex pointing to 185.199.108.153,
+   185.199.109.153, 185.199.110.153 and 185.199.111.153, and a `CNAME` record
+   `www → andresrubio.github.io`.
+3. In Settings → Pages, enter the custom domain and enable *Enforce HTTPS*.
 
 ## Brand assets
 
